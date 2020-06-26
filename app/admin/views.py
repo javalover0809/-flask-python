@@ -4,8 +4,10 @@
 # @Author   : Ricky.YangRui
 
 import sys
+from imp import reload
+
 reload(sys)
-sys.setdefaultencoding('utf8')
+# sys.setdefaultencoding('utf8')
 
 from . import admin
 from flask import render_template, redirect, url_for, flash, session, request, abort
